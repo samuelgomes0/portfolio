@@ -9,7 +9,7 @@ import WorkExperienceSection from "./(sections)/WorkExperience";
 
 function Home() {
   return (
-    <main className="mx-auto px-4 py-8 grid gap-8 max-w-2xl">
+    <main className="mx-auto px-4 py-8 grid gap-8 max-w-3xl">
       <div className="absolute top-4 right-4 z-10">
         <ThemeToggle />
       </div>
