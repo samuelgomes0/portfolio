@@ -4,7 +4,11 @@ function AboutSection() {
   return (
     <section>
       <TypographyH3 text="Sobre mim" className="font-bold" />
-      <TypographyMuted text="Software Engineer com paixão por criar soluções eficientes e modernas. Com formação em Sistemas de Informação, busco constantemente aprender e aplicar novas tecnologias para resolver problemas complexos e criar produtos de alto impacto. Atualmente, tenho focado em projetos que envolvem desde o desenvolvimento de APIs robustas até a criação de interfaces de usuário intuitivas. Inclusive, estou desenvolvendo o meu primeiro SaaS, que visa facilitar a gestão financeira pessoal." />
+      <div className="space-y-2">
+        <TypographyMuted text="Atualmente atuo na Compass UOL, desenvolvendo soluções de IA conversacional e comunicação digital para o setor de saúde, com foco em fluxos de atendimento inteligentes, contact centers escaláveis e integrações robustas usando Twilio e Google Cloud Platform." />
+        <TypographyMuted text="Também lidero o Front-End em um projeto acadêmico que cria uma plataforma de tradução e revisão automatizada de textos científicos, aplicando IA para garantir qualidade técnica e eficiência na produção de artigos." />
+        <TypographyMuted text="Paralelamente, sou idealizador do Numora, uma plataforma SaaS de gestão financeira pessoal, criada para ajudar pessoas a entenderem e planejarem melhor sua vida financeira." />
+      </div>
     </section>
   );
 }

@@ -3,6 +3,7 @@ import { TypographyH3 } from "@/components/Typography";
 function WorkExperienceSection() {
   const experience = [
     {
+      id: 1,
       companyName: "Byte Jr. - Empresa Júnior de Tecnologia da Informação",
       position: "Front-End Developer | React & Wordpress",
       startDate: "Maio de 2021",
@@ -11,6 +12,7 @@ function WorkExperienceSection() {
       technologies: ["JavaScript", "React", "Wordpress"],
     },
     {
+      id: 2,
       companyName: "Compass UOL",
       position: "Chatbot Developer | Twilio & Google Cloud Platform",
       startDate: "Outubro de 2022",
@@ -24,6 +26,7 @@ function WorkExperienceSection() {
       ],
     },
     {
+      id: 3,
       companyName: "iTec/FURG-Embrapii - Centro de Robótica e Ciência de Dados",
       position:
         "Front-End Team Lead | Plataforma de Tradução e Revisão Automatizada | TypeScript, React & Next.js",

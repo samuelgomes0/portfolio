@@ -8,6 +8,12 @@ function EducationsSection() {
       institution: "Universidade Federal do Rio Grande (FURG)",
       year: "2020 - 2025",
     },
+    {
+      id: 2,
+      title: "Trilhas Avançadas de ReactJS, Node.js e Next.js",
+      institution: "Rocketseat",
+      year: "2023 - 2025",
+    },
   ];
 
   return (
