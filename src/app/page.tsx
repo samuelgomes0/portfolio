@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import ThemeToggle from "@/components/ThemeToggle";
 import AboutSection from "./(sections)/About";
 import EducationsSection from "./(sections)/Educations";
@@ -10,6 +11,7 @@ import WorkExperienceSection from "./(sections)/WorkExperience";
 function Home() {
   return (
     <main className="mx-auto grid max-w-2xl gap-8 px-4 py-8 text-center md:text-left">
+      <ScrollProgress />
       <div className="absolute top-4 right-4 z-10">
         <ThemeToggle />
       </div>
