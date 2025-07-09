@@ -10,7 +10,7 @@ function TypographyH1({ text, className }: TypographyProps) {
     <h1
       className={cn(
         "scroll-m-20 text-4xl font-extrabold tracking-tight text-balance",
-        className
+        className,
       )}
     >
       {text}
@@ -23,7 +23,7 @@ function TypographyH2({ text, className }: TypographyProps) {
     <h2
       className={cn(
         "scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0",
-        className
+        className,
       )}
     >
       {text}
@@ -36,7 +36,7 @@ function TypographyH3({ text, className }: TypographyProps) {
     <h3
       className={cn(
         "scroll-m-20 text-2xl font-semibold tracking-tight",
-        className
+        className,
       )}
     >
       {text}

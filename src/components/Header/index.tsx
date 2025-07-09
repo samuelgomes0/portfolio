@@ -3,7 +3,7 @@ import { TypographyH1, TypographyH2 } from "../Typography";
 
 function Header() {
   return (
-    <header className="flex gap-6 justify-between mt-12">
+    <header className="mt-12 flex items-center justify-between gap-6">
       <div className="space-y-2">
         <TypographyH1
           text="Oi, sou o Samuel 👋"
@@ -14,7 +14,7 @@ function Header() {
           className="text-xl font-normal"
         />
       </div>
-      <Avatar className="h-32 w-32 hidden md:block">
+      <Avatar className="hidden h-32 w-32 md:block">
         <AvatarImage src="/me.JPEG" className="object-cover" />
         <AvatarFallback>SG</AvatarFallback>
       </Avatar>
