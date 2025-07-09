@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import ThemeToggle from "@/components/ThemeToggle";
@@ -20,6 +21,7 @@ function Home() {
       <EducationSection />
       <SkillsSection />
       <ProjectsSection />
+      <Footer />
     </main>
   );
 }

@@ -10,7 +10,8 @@ interface SkillItem {
 const skillsItems: SkillItem[] = [
   {
     category: "Front-End",
-    description: "Construção de interfaces modernas, reativas e escaláveis.",
+    description:
+      "Construção de interfaces modernas, declarativas e escaláveis.",
     items: [
       {
         name: "React",
@@ -36,33 +37,34 @@ const skillsItems: SkillItem[] = [
   },
   {
     category: "Back-End",
-    description: "APIs robustas, escaláveis e seguras com foco em Node.js.",
+    description:
+      "APIs seguras, performáticas e escaláveis com Node.js e TypeScript.",
     items: [
       {
         name: "Node.js",
         tooltip: "Ambiente de execução JavaScript no servidor.",
       },
       {
+        name: "TypeScript",
+        tooltip: "Tipagem estática para APIs robustas em Node.js.",
+      },
+      {
         name: "NestJS",
-        tooltip: "Framework Node modular e opinativo baseado em TypeScript.",
+        tooltip: "Framework modular e opinativo baseado em TypeScript.",
       },
+      { name: "Express.js", tooltip: "Framework minimalista para APIs HTTP." },
+      { name: "Fastify", tooltip: "Framework leve e rápido para APIs Node." },
+      { name: "Prisma", tooltip: "ORM moderno para bancos SQL." },
       {
-        name: "Express.js",
-        tooltip: "Framework minimalista para criar APIs HTTP com Node.js.",
-      },
-      {
-        name: "Fastify",
-        tooltip: "Framework Node focado em alta performance e baixo overhead.",
-      },
-      {
-        name: "Prisma",
-        tooltip: "ORM moderno para bancos SQL no ecossistema Node.",
+        name: "PostgreSQL",
+        tooltip: "Banco de dados relacional robusto e open source.",
       },
     ],
   },
   {
     category: "Chatbots & IA",
-    description: "Fluxos inteligentes, contact centers e automações.",
+    description:
+      "Desenvolvimento de fluxos conversacionais inteligentes e automações.",
     items: [
       {
         name: "Twilio Flex",
@@ -89,25 +91,23 @@ const skillsItems: SkillItem[] = [
   {
     category: "Cloud & DevOps",
     description:
-      "Deploys eficientes, monitoramento e pipelines CI/CD para projetos.",
+      "Infraestrutura moderna, deploys eficientes e pipelines CI/CD.",
     items: [
       {
         name: "Google Cloud Platform",
         tooltip: "Plataforma em nuvem para apps Node distribuídos.",
       },
-      {
-        name: "Docker",
-        tooltip: "Containerização para ambientes isolados e replicáveis.",
-      },
+      { name: "Docker", tooltip: "Containerização para ambientes isolados." },
       {
         name: "CI/CD",
-        tooltip: "Integração e entrega contínua para pipelines JavaScript.",
+        tooltip: "Integração e entrega contínua para projetos Node.js.",
       },
     ],
   },
   {
     category: "Boas Práticas & Metodologias",
-    description: "Padrões e processos para qualidade de código.",
+    description:
+      "Qualidade de código, versionamento e processos ágeis de desenvolvimento.",
     items: [
       {
         name: "Clean Code",
@@ -121,18 +121,9 @@ const skillsItems: SkillItem[] = [
         name: "Scrum",
         tooltip: "Método ágil para desenvolvimento incremental.",
       },
-      {
-        name: "Kanban",
-        tooltip: "Fluxo de trabalho visual e contínuo.",
-      },
-      {
-        name: "Git",
-        tooltip: "Versionamento distribuído para projetos Node.",
-      },
-      {
-        name: "GitHub",
-        tooltip: "Plataforma de hospedagem e colaboração Git.",
-      },
+      { name: "Kanban", tooltip: "Fluxo de trabalho visual e contínuo." },
+      { name: "Git", tooltip: "Versionamento distribuído de código." },
+      { name: "GitHub", tooltip: "Hospedagem e colaboração em projetos Git." },
       {
         name: "Bitbucket",
         tooltip: "Hospedagem de repositórios Git com pipelines integrados.",
