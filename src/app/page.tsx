@@ -1,9 +1,8 @@
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import ThemeToggle from "@/components/ThemeToggle";
 import AboutSection from "./(sections)/About";
-import EducationsSection from "./(sections)/Educations";
+import EducationSection from "./(sections)/Education";
 import ProjectsSection from "./(sections)/Projects";
 import SkillsSection from "./(sections)/Skills";
 import WorkExperienceSection from "./(sections)/WorkExperience";
@@ -18,10 +17,9 @@ function Home() {
       <Header />
       <AboutSection />
       <WorkExperienceSection />
-      <EducationsSection />
+      <EducationSection />
       <SkillsSection />
       <ProjectsSection />
-      <Footer />
     </main>
   );
 }
