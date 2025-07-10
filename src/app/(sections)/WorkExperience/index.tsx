@@ -45,7 +45,7 @@ function WorkExperienceSection() {
                   <div className="flex flex-col space-y-1 text-left">
                     <TypographySmall
                       text={companyName}
-                      className="font-semibol line-clamp-1 max-w-xs"
+                      className="line-clamp-1 max-w-xs font-semibold"
                     />
                     <TypographyMuted text={position} className="text-sm" />
                   </div>

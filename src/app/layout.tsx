@@ -1,3 +1,5 @@
+import DockComponent from "@/components/Dock";
+import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -29,7 +31,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <ScrollProgress />
           {children}
+          <DockComponent />
         </ThemeProvider>
       </body>
     </html>
