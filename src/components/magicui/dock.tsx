@@ -87,7 +87,7 @@ export interface DockIconProps
   size?: number;
   magnification?: number;
   distance?: number;
-  mouseX?: ReturnType<typeof useMotionValue>;
+  mouseX?: import("framer-motion").MotionValue<number>;
   className?: string;
   children?: React.ReactNode;
   props?: PropsWithChildren;
