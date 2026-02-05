@@ -5,13 +5,10 @@ function Header() {
   return (
     <header className="flex items-center justify-between gap-6">
       <div className="space-y-2">
-        <TypographyH1
-          text="Oi, sou o Samuel 👋"
-          className="text-6xl font-bold"
-        />
+        <TypographyH1 text="Samuel Gomes" className="text-6xl font-bold" />
         <TypographyH2
-          text="Software Engineer especializado em TypeScript, Next.js, Node.js e Twilio. Desenvolvo aplicações web modernas, escaláveis e crio experiências de comunicação inteligentes."
-          className="text-lg font-normal"
+          text="Full-Stack Engineer especializado em TypeScript, React, Next.js, Node.js e NestJS. Desenvolvo aplicações web modernas, escaláveis e crio experiências de comunicação inteligentes."
+          className="text-muted-foreground text-lg font-normal"
         />
       </div>
       <Avatar className="hidden h-32 w-32 md:block">

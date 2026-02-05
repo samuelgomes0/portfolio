@@ -11,10 +11,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Samuel Gomes Rosa | Engenheiro de Software Full-Stack & Especialista em Chatbots",
+  title: "Samuel Gomes | Full-Stack Engineer",
   description:
-    "Engenheiro de Software Full-Stack especializado em criar soluções de IA conversacional com Twilio e Google Cloud. Desenvolvo aplicações web e APIs modernas com TypeScript, Next.js e Node.js.",
+    "Engenheiro de Software Full-Stack especializado em criar soluções de IA conversacional com Twilio e Google Cloud. Planejo e desenvolvo aplicações web e APIs modernas com TypeScript, Next.js e Node.js.",
 };
 
 export default function RootLayout({

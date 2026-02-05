@@ -1,5 +1,6 @@
 interface Project {
   title: string;
+  role: string;
   period: string;
   description: string;
   stack: string[];
@@ -8,35 +9,33 @@ interface Project {
 
 const projectList: Project[] = [
   {
-    title: "Wise Commit",
-    period: "2025",
+    title: "AprovaLeges",
+    role: "Desenvolvedor Full-Stack",
+    period: "2025-2026",
     description:
-      "CLI tool que sugere mensagens de commit claras e consistentes. Automatiza prefixos semânticos, integra-se ao Git e usa LLMs via Groq-SDK.",
-    stack: ["Node.js", "TypeScript", "CLI", "Simple-Git", "Groq-SDK"],
-    links: [
-      { label: "GitHub", url: "https://github.com/samuelgomes0/wise.commit" },
-    ],
-  },
-  {
-    title: "Wise Rooms",
-    period: "2024",
-    description:
-      "Plataforma para reserva inteligente de salas com API robusta e interface Next.js moderna.",
+      "Plataforma de legislação interativa para concursos públicos e OAB, com leis atualizadas em tempo real, grifos e anotações persistentes, além de busca inteligente.",
     stack: [
-      "Next.js",
       "TypeScript",
-      "Tailwind CSS",
-      "Zod",
-      "Express",
+      "Node.js",
+      "NestJS",
       "Prisma",
       "PostgreSQL",
+      "Next.js",
     ],
-    links: [
-      { label: "GitHub", url: "https://github.com/samuelgomes0/wise.rooms" },
-    ],
+    links: [{ label: "Website", url: "https://aprovaleges.com.br/" }],
+  },
+  {
+    title: "CoAutoria",
+    role: "Líder de Front-end",
+    period: "2025-2026",
+    description:
+      "Sistema automatizado para tradução e revisão de artigos científicos na área da saúde, baseado em uma arquitetura multiagente com regras personalizáveis.",
+    stack: ["TypeScript", "Next.js", "React", "Tailwind CSS"],
+    links: [{ label: "Em desenvolvimento", url: "#" }],
   },
   {
     title: "Cadê Meu Pet",
+    role: "Idealizador e Desenvolvedor Full-Stack",
     period: "2024",
     description:
       "App web que conecta donos de pets e comunidade para localizar animais perdidos.",
@@ -55,6 +54,7 @@ const projectList: Project[] = [
   },
   {
     title: "Numora",
+    role: "Idealizador e Desenvolvedor Full-Stack",
     period: "Em desenvolvimento",
     description:
       "Plataforma SaaS para gestão financeira pessoal. Controle de despesas, planejamento e insights financeiros.",
