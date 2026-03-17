@@ -1,9 +1,4 @@
-import {
-  InstagramIcon,
-  LinkedinIcon,
-  LucideIcon,
-  MailIcon,
-} from "lucide-react";
+import { InstagramIcon, LinkedinIcon, LucideIcon, MailIcon } from 'lucide-react';
 
 interface ContactItem {
   name: string;
@@ -14,19 +9,19 @@ interface ContactItem {
 
 const contactItems: ContactItem[] = [
   {
-    name: "E-mail",
-    href: "mailto:samuel_gomes26@hotmail.com",
+    name: 'E-mail',
+    href: 'mailto:samuel_gomes26@hotmail.com',
     icon: MailIcon,
   },
   {
-    name: "LinkedIn",
-    href: "https://www.linkedin.com/in/samuelgomes0/",
+    name: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/samuelgomes0/',
     icon: LinkedinIcon,
     external: true,
   },
   {
-    name: "Instagram",
-    href: "https://www.instagram.com/samuelgomes0/",
+    name: 'Instagram',
+    href: 'https://www.instagram.com/samuelgomes0/',
     icon: InstagramIcon,
     external: true,
   },

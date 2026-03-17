@@ -1,17 +1,9 @@
-"use client";
+'use client';
 
-import {
-  TypographyH3,
-  TypographyMuted,
-  TypographySmall,
-} from "@/components/Typography";
-import { Badge } from "@/components/ui/badge";
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card";
-import skillsItems from "./items";
+import { TypographyH3, TypographyMuted, TypographySmall } from '@/components/Typography';
+import { Badge } from '@/components/ui/badge';
+import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card';
+import skillsItems from './items';
 
 function SkillsSection() {
   return (
@@ -30,9 +22,7 @@ function SkillsSection() {
                       {name}
                     </Badge>
                   </HoverCardTrigger>
-                  <HoverCardContent className="max-w-xs text-sm">
-                    {tooltip}
-                  </HoverCardContent>
+                  <HoverCardContent className="max-w-xs text-sm">{tooltip}</HoverCardContent>
                 </HoverCard>
               ))}
             </div>

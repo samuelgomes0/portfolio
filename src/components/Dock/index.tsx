@@ -1,23 +1,18 @@
-"use client";
+'use client';
 
-import { Dock, DockIcon } from "@/components/magicui/dock";
-import { Button, buttonVariants } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { cn } from "@/lib/utils";
-import Link from "next/link";
-import ScrollToTopIcon from "../ScrollToTopIcon";
-import ModeToggle from "../ThemeToggle";
-import { navbarLinks, socialLinks } from "./items";
+import { Dock, DockIcon } from '@/components/magicui/dock';
+import { Button, buttonVariants } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import { cn } from '@/lib/utils';
+import Link from 'next/link';
+import ScrollToTopIcon from '../ScrollToTopIcon';
+import ModeToggle from '../ThemeToggle';
+import { navbarLinks, socialLinks } from './items';
 
 function DockComponent() {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -53,8 +48,8 @@ function DockComponent() {
                     href={href}
                     aria-label={label}
                     className={cn(
-                      buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 rounded-full",
+                      buttonVariants({ variant: 'ghost', size: 'icon' }),
+                      'size-12 rounded-full',
                     )}
                   >
                     <Icon className="size-4" />
@@ -75,8 +70,8 @@ function DockComponent() {
                     href={url}
                     aria-label={name}
                     className={cn(
-                      buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 rounded-full",
+                      buttonVariants({ variant: 'ghost', size: 'icon' }),
+                      'size-12 rounded-full',
                     )}
                   >
                     <Icon className="size-4" />

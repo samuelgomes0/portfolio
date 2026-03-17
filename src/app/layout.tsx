@@ -1,19 +1,19 @@
-import DockComponent from "@/components/Dock";
-import { ScrollProgress } from "@/components/magicui/scroll-progress";
-import { ThemeProvider } from "@/providers/ThemeProvider";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import DockComponent from '@/components/Dock';
+import { ScrollProgress } from '@/components/magicui/scroll-progress';
+import { ThemeProvider } from '@/providers/ThemeProvider';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
 
 const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
+  subsets: ['latin'],
+  variable: '--font-inter',
 });
 
 export const metadata: Metadata = {
-  title: "Samuel Gomes | Full-Stack Engineer",
+  title: 'Samuel Gomes | Full-Stack Engineer',
   description:
-    "Engenheiro de Software Full-Stack especializado em criar soluções de IA conversacional com Twilio e Google Cloud. Planejo e desenvolvo aplicações web e APIs modernas com TypeScript, Next.js e Node.js.",
+    'Engenheiro de Software Full-Stack especializado em criar soluções de IA conversacional com Twilio e Google Cloud. Planejo e desenvolvo aplicações web e APIs modernas com TypeScript, Next.js e Node.js.',
 };
 
 export default function RootLayout({

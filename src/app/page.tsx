@@ -1,11 +1,11 @@
-import Header from "@/components/Header";
-import { BlurFade } from "@/components/magicui/blur-fade";
-import AboutSection from "./(sections)/About";
-import ContactSection from "./(sections)/Contact";
-import EducationSection from "./(sections)/Education";
-import ProjectsSection from "./(sections)/Projects";
-import SkillsSection from "./(sections)/Skills";
-import WorkExperienceSection from "./(sections)/WorkExperience";
+import Header from '@/components/Header';
+import { BlurFade } from '@/components/magicui/blur-fade';
+import AboutSection from './(sections)/About';
+import ContactSection from './(sections)/Contact';
+import EducationSection from './(sections)/Education';
+import ProjectsSection from './(sections)/Projects';
+import SkillsSection from './(sections)/Skills';
+import WorkExperienceSection from './(sections)/WorkExperience';
 
 function Home() {
   return (

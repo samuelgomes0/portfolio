@@ -1,0 +1,27 @@
+# Build outputs
+.next
+out
+build
+dist
+
+# Dependencies
+node_modules
+
+# Static assets (optional - remove if you want to format public files)
+public
+
+# Generated files
+*.tsbuildinfo
+next-env.d.ts
+.turbo
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Cache
+.eslintcache
+
+# Coverage
+coverage

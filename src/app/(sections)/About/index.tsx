@@ -1,4 +1,4 @@
-import { TypographyH3, TypographyMuted } from "@/components/Typography";
+import { TypographyH3, TypographyMuted } from '@/components/Typography';
 
 function AboutSection() {
   return (

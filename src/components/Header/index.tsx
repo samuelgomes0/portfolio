@@ -1,5 +1,5 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { TypographyH1, TypographyH2 } from "../Typography";
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { TypographyH1, TypographyH2 } from '../Typography';
 
 function Header() {
   return (

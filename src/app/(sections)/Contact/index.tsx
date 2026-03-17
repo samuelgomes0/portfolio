@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import { TypographyH2, TypographyH3 } from "@/components/Typography";
-import { Button } from "@/components/ui/button";
-import { HoverCard, HoverCardTrigger } from "@/components/ui/hover-card";
-import Link from "next/link";
-import contactItems from "./items";
+import { TypographyH2, TypographyH3 } from '@/components/Typography';
+import { Button } from '@/components/ui/button';
+import { HoverCard, HoverCardTrigger } from '@/components/ui/hover-card';
+import Link from 'next/link';
+import contactItems from './items';
 
 function ContactSection() {
   return (
@@ -24,8 +24,8 @@ function ContactSection() {
               <Button asChild variant="outline">
                 <Link
                   href={href}
-                  target={external ? "_blank" : undefined}
-                  rel={external ? "noopener noreferrer" : undefined}
+                  target={external ? '_blank' : undefined}
+                  rel={external ? 'noopener noreferrer' : undefined}
                 >
                   <Icon />
                   {name}
