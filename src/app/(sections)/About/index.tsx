@@ -5,9 +5,8 @@ function AboutSection() {
     <section>
       <TypographyH3 text="Sobre mim" className="font-bold" />
       <div className="mt-2 space-y-2">
-        <TypographyMuted text="Atualmente atuo na Compass UOL, desenvolvendo soluções de IA conversacional e comunicação digital para o setor de saúde, com foco em fluxos de atendimento inteligentes, contact centers escaláveis e integrações robustas usando Twilio e Google Cloud Platform." />
-        <TypographyMuted text="Também lidero o Front-End em um projeto que cria uma plataforma de tradução e revisão automatizada de textos científicos, aplicando IA para garantir qualidade técnica e eficiência na produção de artigos." />
-        <TypographyMuted text="Paralelamente, sou idealizador do Numora, uma plataforma SaaS de gestão financeira pessoal, criada para ajudar pessoas a entenderem e planejarem melhor sua vida financeira." />
+        <TypographyMuted text="Full-Stack Engineer com mais de 5 anos de experiência nos ecossistema Node.js, Python e na plataforma Twilio, especializado no desenvolvimento e na escalabilidade de aplicações web, soluções de comunicação digital de alto volume e sistemas baseados em Inteligência Artificial." />
+        <TypographyMuted text="Histórico de atuação em liderança técnica, arquitetura de sistemas distribuídos, desenvolvimento de chatbots e automações com n8n. Atualmente aprofundando estudos em Machine Learning e Deep Learning, com foco em Visão Computacional." />{' '}
       </div>
     </section>
   );

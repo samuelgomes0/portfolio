@@ -7,7 +7,6 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/comp
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import ScrollToTopIcon from '../ScrollToTopIcon';
-import ModeToggle from '../ThemeToggle';
 import { navbarLinks, socialLinks } from './items';
 
 function DockComponent() {
@@ -83,26 +82,6 @@ function DockComponent() {
               </Tooltip>
             </DockIcon>
           ))}
-
-          <Separator orientation="vertical" className="h-full py-2" />
-
-          <DockIcon>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  aria-label="Alternar tema"
-                  className="cursor-pointer rounded-full px-2"
-                >
-                  <ModeToggle />
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Alternar tema</p>
-              </TooltipContent>
-            </Tooltip>
-          </DockIcon>
         </Dock>
       </TooltipProvider>
     </div>

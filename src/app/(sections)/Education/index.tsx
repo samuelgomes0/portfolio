@@ -7,8 +7,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { GraduationCap } from 'lucide-react';
+import Image from 'next/image';
 import educationItems from './items';
 
 function EducationSection() {
@@ -20,16 +20,22 @@ function EducationSection() {
           <AccordionItem key={id} value={`education-${id}`}>
             <AccordionTrigger className="flex items-center justify-between">
               <div className="flex items-center gap-4">
-                <Avatar className="h-12 w-12">
-                  <AvatarImage
-                    src={imageUrl}
-                    alt={`${institution} logo`}
-                    className="object-cover"
-                  />
-                  <AvatarFallback>
-                    <GraduationCap className="h-6 w-6" />
-                  </AvatarFallback>
-                </Avatar>
+                <div className="h-12 w-12 shrink-0 overflow-hidden rounded-full">
+                  {imageUrl ? (
+                    <Image
+                      src={imageUrl}
+                      alt={`${institution} logo`}
+                      width={48}
+                      height={48}
+                      quality={100}
+                      className="h-full w-full object-cover"
+                    />
+                  ) : (
+                    <div className="bg-muted flex h-full w-full items-center justify-center rounded-full">
+                      <GraduationCap className="h-6 w-6" />
+                    </div>
+                  )}
+                </div>
                 <div className="flex flex-col space-y-1 text-left">
                   <TypographySmall
                     text={institution}

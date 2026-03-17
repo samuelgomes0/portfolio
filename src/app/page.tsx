@@ -1,5 +1,4 @@
 import Header from '@/components/Header';
-import { BlurFade } from '@/components/magicui/blur-fade';
 import AboutSection from './(sections)/About';
 import ContactSection from './(sections)/Contact';
 import EducationSection from './(sections)/Education';
@@ -9,34 +8,20 @@ import WorkExperienceSection from './(sections)/WorkExperience';
 
 function Home() {
   return (
-    <main className="mx-auto my-16 grid max-w-2xl gap-8 px-4 text-center md:text-left">
-      <BlurFade duration={0.5} delay={0} inView>
-        <Header />
-      </BlurFade>
+    <main className="mx-auto my-16 grid max-w-2xl gap-8 rounded-lg border border-white/10 bg-white/5 p-8 text-center shadow-lg backdrop-blur-md md:text-left">
+      <Header />
 
-      <BlurFade duration={0.5} delay={0.05} inView>
-        <AboutSection />
-      </BlurFade>
+      <AboutSection />
 
-      <BlurFade duration={0.5} delay={0.1} inView>
-        <WorkExperienceSection />
-      </BlurFade>
+      <WorkExperienceSection />
 
-      <BlurFade duration={0.5} delay={0.15} inView>
-        <EducationSection />
-      </BlurFade>
+      <EducationSection />
 
-      <BlurFade duration={0.5} delay={0.2} inView>
-        <SkillsSection />
-      </BlurFade>
+      <SkillsSection />
 
-      <BlurFade duration={0.5} delay={0.25} inView>
-        <ProjectsSection />
-      </BlurFade>
+      <ProjectsSection />
 
-      <BlurFade duration={0.5} delay={0.3} inView>
-        <ContactSection />
-      </BlurFade>
+      <ContactSection />
     </main>
   );
 }

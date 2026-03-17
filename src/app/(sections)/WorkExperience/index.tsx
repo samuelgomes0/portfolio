@@ -5,8 +5,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
+import Image from 'next/image';
 import workExperienceItems from './items';
 
 function WorkExperienceSection() {
@@ -28,14 +28,22 @@ function WorkExperienceSection() {
             <AccordionItem key={id} value={`item-${id}`}>
               <AccordionTrigger className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                  <Avatar className="h-12 w-12">
-                    <AvatarImage
-                      src={imageUrl}
-                      alt={`${companyName} logo`}
-                      className="object-cover"
-                    />
-                    <AvatarFallback>{companyName.charAt(0).toUpperCase()}</AvatarFallback>
-                  </Avatar>
+                  <div className="h-12 w-12 shrink-0 overflow-hidden rounded-full">
+                    {imageUrl ? (
+                      <Image
+                        src={imageUrl}
+                        alt={`${companyName} logo`}
+                        width={48}
+                        height={48}
+                        quality={100}
+                        className="h-full w-full object-cover"
+                      />
+                    ) : (
+                      <div className="bg-muted flex h-full w-full items-center justify-center rounded-full text-sm font-semibold">
+                        {companyName.charAt(0).toUpperCase()}
+                      </div>
+                    )}
+                  </div>
                   <div className="flex flex-col space-y-1 text-left">
                     <TypographySmall
                       text={companyName}
