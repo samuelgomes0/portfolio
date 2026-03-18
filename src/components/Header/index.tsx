@@ -11,7 +11,7 @@ function Header() {
         />
         <TypographyH1 text="Samuel Gomes" className="text-6xl font-bold" />
         <TypographyH2
-          text="Full-Stack Engineer, Líder Técnico, Pesquisador e Bacharel em Sistemas de Informação. Especialista nos ecossistemas Node.js, Python e Twilio."
+          text="Engenheiro Full-Stack especialista em TypeScript, CPaaS Twilio e arquitetura de contact center omnichannel. Líder técnico com foco em sistemas escaláveis e observabilidade."
           className="text-muted-foreground text-lg font-normal"
         />
       </div>

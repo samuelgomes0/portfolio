@@ -1,5 +1,3 @@
-'use client';
-
 import { TypographyH3, TypographyMuted, TypographySmall } from '@/components/Typography';
 import {
   Accordion,
@@ -24,10 +22,10 @@ function EducationSection() {
                   {imageUrl ? (
                     <Image
                       src={imageUrl}
-                      alt={`${institution} logo`}
+                      alt=""
+                      aria-hidden="true"
                       width={48}
                       height={48}
-                      quality={100}
                       className="h-full w-full object-cover"
                     />
                   ) : (

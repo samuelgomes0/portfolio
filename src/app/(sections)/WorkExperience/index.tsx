@@ -32,10 +32,10 @@ function WorkExperienceSection() {
                     {imageUrl ? (
                       <Image
                         src={imageUrl}
-                        alt={`${companyName} logo`}
+                        alt=""
+                        aria-hidden="true"
                         width={48}
                         height={48}
-                        quality={100}
                         className="h-full w-full object-cover"
                       />
                     ) : (

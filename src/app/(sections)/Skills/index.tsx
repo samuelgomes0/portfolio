@@ -1,5 +1,3 @@
-'use client';
-
 import { TypographyH3, TypographyMuted, TypographySmall } from '@/components/Typography';
 import { Badge } from '@/components/ui/badge';
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card';

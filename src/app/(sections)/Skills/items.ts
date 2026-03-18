@@ -9,8 +9,84 @@ interface SkillItem {
 
 const skillsItems: SkillItem[] = [
   {
+    category: 'Core & Back-End',
+    description: 'APIs robustas, microsserviços e arquitetura orientada a eventos.',
+    items: [
+      {
+        name: 'TypeScript',
+        tooltip: 'Tipagem estática para código seguro e manutenível em toda a stack.',
+      },
+      {
+        name: 'Node.js',
+        tooltip: 'Runtime JavaScript para servidores de alta performance.',
+      },
+      {
+        name: 'NestJS',
+        tooltip: 'Framework modular com injeção de dependência e suporte a microsserviços.',
+      },
+      {
+        name: 'Python / FastAPI',
+        tooltip: 'APIs assíncronas de alta performance com tipagem via Pydantic.',
+      },
+      {
+        name: 'Arquitetura Hexagonal',
+        tooltip: 'Isolamento de domínio com ports & adapters para sistemas testáveis.',
+      },
+      {
+        name: 'DDD',
+        tooltip: 'Domain-Driven Design para modelagem de sistemas complexos.',
+      },
+      {
+        name: 'Event-Driven',
+        tooltip: 'Arquitetura orientada a eventos com mensageria assíncrona.',
+      },
+      {
+        name: 'RabbitMQ',
+        tooltip: 'Message broker para pipelines de eventos confiáveis e desacoplados.',
+      },
+      {
+        name: 'Redis',
+        tooltip: 'Cache em memória para redução de latência e gerenciamento de sessões.',
+      },
+    ],
+  },
+  {
+    category: 'CPaaS & IA Conversacional',
+    description: 'Contact centers omnichannel e fluxos conversacionais escaláveis.',
+    items: [
+      {
+        name: 'Twilio Flex',
+        tooltip: 'Contact center customizável com plugins de produção em React.',
+      },
+      {
+        name: 'Conversations API',
+        tooltip: 'Mensageria assíncrona omnichannel (WhatsApp, Webchat, SMS).',
+      },
+      {
+        name: 'Twilio Serverless',
+        tooltip: 'Functions Node.js como middleware seguro entre chatbot e sistemas internos.',
+      },
+      {
+        name: 'TaskRouter',
+        tooltip: 'Roteamento inteligente de tickets em tempo real para agentes.',
+      },
+      {
+        name: 'Twilio Studio',
+        tooltip: 'Editor visual de fluxos conversacionais omnichannel.',
+      },
+      {
+        name: 'Dialogflow CX',
+        tooltip: 'Agentes conversacionais com NLU avançado, webhooks e retenção de contexto.',
+      },
+      {
+        name: 'Event Streams',
+        tooltip: 'Streaming de eventos Twilio para observabilidade e auditoria de canais.',
+      },
+    ],
+  },
+  {
     category: 'Front-End',
-    description: 'Interfaces modernas, declarativas e escaláveis.',
+    description: 'Interfaces modernas, acessíveis e orientadas a performance.',
     items: [
       {
         name: 'React',
@@ -18,11 +94,11 @@ const skillsItems: SkillItem[] = [
       },
       {
         name: 'Next.js',
-        tooltip: 'Framework React com suporte a SSR, SSG e App Router.',
+        tooltip: 'Framework React com App Router, SSR, SSG e otimizações de Core Web Vitals.',
       },
       {
-        name: 'TypeScript',
-        tooltip: 'Tipagem estática para código mais seguro e manutenível.',
+        name: 'Zustand / Redux',
+        tooltip: 'Gerenciamento de estado leve e previsível para aplicações React.',
       },
       {
         name: 'TailwindCSS',
@@ -32,130 +108,73 @@ const skillsItems: SkillItem[] = [
         name: 'shadcn/ui',
         tooltip: 'Componentes acessíveis e customizáveis baseados em Radix UI.',
       },
+      {
+        name: 'WCAG 2.1',
+        tooltip: 'Conformidade com diretrizes de acessibilidade para web.',
+      },
+      {
+        name: 'Micro-frontends',
+        tooltip: 'Decomposição de interfaces em domínios independentes e escaláveis.',
+      },
     ],
   },
   {
-    category: 'Back-End',
-    description: 'APIs robustas, seguras e escaláveis com Node.js e TypeScript.',
+    category: 'Bancos de Dados',
+    description: 'Modelagem eficiente, queries otimizadas e múltiplos paradigmas.',
     items: [
-      {
-        name: 'Node.js',
-        tooltip: 'Runtime JavaScript para servidores de alta performance.',
-      },
-      {
-        name: 'TypeScript',
-        tooltip: 'Tipagem estática aplicada a APIs e serviços Node.js.',
-      },
-      {
-        name: 'NestJS',
-        tooltip: 'Framework modular com injeção de dependência e suporte a microsserviços.',
-      },
-      {
-        name: 'Express.js',
-        tooltip: 'Framework minimalista e flexível para APIs HTTP.',
-      },
-      {
-        name: 'Fastify',
-        tooltip: 'Framework de alta performance para APIs Node.js.',
-      },
-      {
-        name: 'Prisma',
-        tooltip: 'ORM type-safe para bancos de dados relacionais.',
-      },
       {
         name: 'PostgreSQL',
-        tooltip: 'Banco de dados relacional robusto e open source.',
+        tooltip: 'Banco relacional robusto com suporte a queries complexas e transações ACID.',
       },
       {
-        name: 'RabbitMQ',
-        tooltip: 'Message broker para arquiteturas orientadas a eventos.',
+        name: 'MySQL',
+        tooltip: 'Banco relacional amplamente adotado em sistemas corporativos.',
+      },
+      {
+        name: 'MongoDB',
+        tooltip: 'Banco orientado a documentos para dados flexíveis e semi-estruturados.',
+      },
+      {
+        name: 'Prisma ORM',
+        tooltip: 'ORM type-safe para bancos relacionais com migrations e query builder.',
       },
     ],
   },
-  {
-    category: 'AI & Machine Learning',
-    description: 'Especialização em IA generativa, LLMs e visão computacional.',
-    items: [
-      {
-        name: 'Python',
-        tooltip: 'Linguagem principal para desenvolvimento de modelos e pipelines de ML.',
-      },
-      {
-        name: 'PyTorch',
-        tooltip: 'Framework de deep learning para treinamento e inferência de modelos.',
-      },
-      {
-        name: 'LangChain',
-        tooltip: 'Framework para orquestração de pipelines com LLMs.',
-      },
-      {
-        name: 'RAG',
-        tooltip: 'Retrieval-Augmented Generation para respostas contextualizadas com LLMs.',
-      },
-      {
-        name: 'IA Generativa',
-        tooltip: 'Geração de conteúdo com modelos de linguagem e difusão.',
-      },
-      {
-        name: 'Fine-tuning',
-        tooltip: 'Ajuste fino de modelos pré-treinados para domínios específicos.',
-      },
-      {
-        name: 'Visão Computacional',
-        tooltip: 'Análise e interpretação de imagens com deep learning.',
-      },
-    ],
-  },
-  {
-    category: 'Chatbots & Comunicação',
-    description: 'Fluxos conversacionais inteligentes e contact centers escaláveis.',
-    items: [
-      {
-        name: 'Twilio Flex',
-        tooltip: 'Contact center customizável com plugins em React.',
-      },
-      {
-        name: 'Twilio Studio',
-        tooltip: 'Editor visual de fluxos conversacionais omnichannel.',
-      },
-      {
-        name: 'TaskRouter',
-        tooltip: 'Roteamento inteligente de tarefas em contact centers.',
-      },
-      {
-        name: 'Dialogflow CX',
-        tooltip: 'Agentes conversacionais com NLU avançado e webhooks.',
-      },
-      {
-        name: 'Google Cloud Functions',
-        tooltip: 'Funções serverless para automação e integração de serviços.',
-      },
-    ],
-  },
-
   {
     category: 'Cloud & DevOps',
     description: 'Infraestrutura moderna, deploys eficientes e observabilidade.',
     items: [
       {
-        name: 'Google Cloud Platform',
-        tooltip: 'Plataforma cloud com foco em serverless e integração com IA.',
+        name: 'GCP',
+        tooltip: 'Google Cloud Platform: Cloud Functions, Cloud Run e integração com IA.',
+      },
+      {
+        name: 'AWS',
+        tooltip: 'Amazon Web Services para infraestrutura em nuvem escalável.',
       },
       {
         name: 'Docker',
         tooltip: 'Containerização para ambientes reproduzíveis e isolados.',
       },
       {
+        name: 'Kubernetes',
+        tooltip: 'Orquestração de containers para deploy e escalonamento automatizados.',
+      },
+      {
         name: 'CI/CD',
-        tooltip: 'Pipelines de integração e entrega contínua com GitHub Actions.',
+        tooltip: 'Pipelines de integração e entrega contínua com GitHub Actions e Jenkins.',
+      },
+      {
+        name: 'Terraform',
+        tooltip: 'Infraestrutura como código para provisionamento declarativo de recursos.',
       },
       {
         name: 'OpenTelemetry',
-        tooltip: 'Instrumentação para observabilidade distribuída.',
+        tooltip: 'Instrumentação para rastreamento distribuído e observabilidade.',
       },
       {
-        name: 'Grafana',
-        tooltip: 'Visualização de métricas e monitoramento de sistemas.',
+        name: 'Grafana / Prometheus',
+        tooltip: 'Visualização de métricas e alertas para detecção proativa de regressões.',
       },
     ],
   },
@@ -168,32 +187,24 @@ const skillsItems: SkillItem[] = [
         tooltip: 'Separação de responsabilidades para sistemas maintíveis e testáveis.',
       },
       {
-        name: 'Clean Code',
-        tooltip: 'Código legível, expressivo e de fácil manutenção.',
-      },
-      {
         name: 'SOLID',
         tooltip: 'Princípios de design orientado a objetos para software escalável.',
       },
       {
-        name: 'Scrum',
-        tooltip: 'Framework ágil para desenvolvimento iterativo e incremental.',
+        name: 'Observabilidade',
+        tooltip: 'Rastreamento distribuído, métricas e logs para diagnóstico de sistemas.',
       },
       {
-        name: 'Kanban',
-        tooltip: 'Gestão visual de fluxo de trabalho contínuo.',
+        name: 'Scrum',
+        tooltip: 'Framework ágil para desenvolvimento iterativo com entregas incrementais.',
+      },
+      {
+        name: 'Code Review',
+        tooltip: 'Revisão sistemática de código para redução de débito técnico.',
       },
       {
         name: 'Git',
-        tooltip: 'Versionamento distribuído com fluxos como GitFlow e trunk-based.',
-      },
-      {
-        name: 'GitHub',
-        tooltip: 'Colaboração, code review e CI/CD integrados.',
-      },
-      {
-        name: 'Bitbucket',
-        tooltip: 'Repositórios Git com pipelines integrados para times corporativos.',
+        tooltip: 'Versionamento distribuído com GitFlow e trunk-based development.',
       },
     ],
   },

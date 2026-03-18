@@ -11,30 +11,33 @@ interface workExperienceItem {
 
 const workExperienceItems: workExperienceItem[] = [
   {
-    id: 1,
-    companyName: 'Byte Jr. - Empresa Júnior de Tecnologia da Informação',
-    position: 'Front-End Developer',
-    startDate: 'Mai de 2021',
-    endDate: 'Out de 2022',
+    id: 3,
+    companyName: 'iTec / FURG-Embrapii',
+    position: 'Líder Técnico de Front-End (Pesquisador)',
+    startDate: 'Abr de 2025',
+    endDate: 'Presente',
     description:
-      'Criação de sistemas web, landing pages e sites institucionais com React e WordPress. Aplicação de Scrum e boas práticas de performance, acessibilidade e SEO.',
-    technologies: ['JavaScript', 'React', 'Wordpress'],
+      'Liderança técnica da squad de Front-End no projeto CoAutoria, definindo padrões de arquitetura e garantindo qualidade de código por meio de code reviews sistemáticos, reduzindo o acúmulo de débito técnico. Projetei uma interface modular em Next.js integrada a um pipeline de IA multi-agente, desacoplando as camadas de UI da lógica de processamento de linguagem natural e viabilizando o escalonamento independente de cada camada. Conduzi melhorias de Core Web Vitals, entregando uma aplicação de alta performance totalmente aderente ao WCAG 2.1, com ganhos mensuráveis em acessibilidade e SEO.',
+    technologies: ['TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'shadcn/ui', 'Zustand', 'Zod'],
     imageUrl:
-      'https://media.licdn.com/dms/image/v2/C4D0BAQFJTN_KKfQi5Q/company-logo_200_200/company-logo_200_200/0/1635511777649/bytejr_logo?e=2147483647&v=beta&t=TdZrpD7nHrne50Ok2crAgL31F7Mpe1x4xNDlGeuduj8',
+      'https://media.licdn.com/dms/image/v2/D4D0BAQGo04vyG7_IIA/company-logo_200_200/company-logo_200_200/0/1723813186085/unidade_furg_embrapii_centro_de_robotica_e_ciencia_de_dados_logo?e=2147483647&v=beta&t=LwsFVeDs0QkUOgYjokbRzKWMUE0dS0jCjvxkR-it3sQ',
   },
   {
     id: 2,
-    companyName: 'AI/R - Compass UOL',
-    position: 'Full-Stack Engineer',
+    companyName: 'Compass UOL (AI/R)',
+    position: 'Desenvolvedor Full-Stack & Especialista em IA Conversacional',
     startDate: 'Out de 2022',
     endDate: 'Presente',
     description:
-      'Ao longo de 4 anos, evoluí de Desenvolvedor de Chatbot Júnior a Engenheiro Full-Stack Pleno focado em soluções de comunicação de alta escala. Atuei com o ecossistema Twilio para grandes clientes de Tecnologia, Varejo e Saúde. No estágio mais recente, fui responsável pelo planejamento e desenvolvimento de chatbots, contact centers e plugins customizados para o Twilio Flex com React, integrados ao Google Cloud Platform (Dialogflow CX, Cloud Functions), com foco em escalabilidade, confiabilidade e redução de atritos nas jornadas digitais de pacientes.',
+      'Desenvolvi plugins de produção para o Twilio Flex em React, customizando fluxos de trabalho dos agentes para atendimento omnichannel (Chat/WhatsApp) e configurando regras de roteamento no TaskRouter para otimizar a distribuição de tickets em tempo real. Construí e mantive fluxos conversacionais assíncronos com Twilio Conversations API e Dialogflow CX, garantindo retenção de contexto entre interações de múltiplos turnos. Desenvolvi Twilio Serverless Functions como middleware seguro entre a camada de chatbot e sistemas internos. Liderei a migração de canais legados para uma arquitetura moderna baseada em chat, eliminando handoffs manuais e reduzindo o tempo de espera dos usuários.',
     technologies: [
       'TypeScript',
       'Node.js',
       'React',
-      'Twilio',
+      'Twilio Flex',
+      'Twilio Conversations API',
+      'Twilio Serverless',
+      'TaskRouter',
       'Dialogflow CX',
       'Google Cloud Platform',
       'Docker',
@@ -43,17 +46,17 @@ const workExperienceItems: workExperienceItem[] = [
       'https://media.licdn.com/dms/image/v2/D4D0BAQH_-lKPWQgV_w/company-logo_200_200/company-logo_200_200/0/1726599335867/airevolutiongroup_logo?e=1775088000&v=beta&t=Db90SRxGNMe2VUDKlh-_H1bk6f2GQjEahiKeG7GyddQ',
   },
   {
-    id: 3,
-    companyName: 'iTec/FURG-Embrapii - Centro de Robótica e Ciência de Dados',
-    position: 'Front-End Tech Lead',
-    startDate: 'Abr de 2025',
-    endDate: 'Presente',
+    id: 1,
+    companyName: 'Byte Jr. – Empresa Júnior de TI',
+    position: 'Desenvolvedor Front-End',
+    startDate: 'Mai de 2021',
+    endDate: 'Out de 2022',
     description:
-      'Liderança técnica do Front-End em uma plataforma de IA multiagente para tradução e revisão de artigos científicos na área da saúde. Responsável pela arquitetura, definição de padrões de código e estratégias de testes baseadas em Clean Code e SOLID. Entregamos uma interface moderna e responsiva com Next.js, React e TypeScript, acelerando o desenvolvimento por meio de componentes modulares com TailwindCSS e shadcn/ui, além de fortalecer a maturidade técnica do time via code reviews e pair programming.',
-    technologies: ['TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'shadcn/ui'],
+      'Entreguei aplicações web responsivas e de alta performance, incluindo sites institucionais, com foco em boas práticas de SEO, otimização de performance e conformidade com acessibilidade WCAG. Colaborei em squads multidisciplinares com metodologia Scrum, contribuindo com planejamento de sprints, ciclos de code review e entrega pontual de funcionalidades alinhadas às demandas de design e backend.',
+    technologies: ['JavaScript', 'React', 'WordPress', 'Scrum'],
     imageUrl:
-      'https://media.licdn.com/dms/image/v2/D4D0BAQGo04vyG7_IIA/company-logo_200_200/company-logo_200_200/0/1723813186085/unidade_furg_embrapii_centro_de_robotica_e_ciencia_de_dados_logo?e=2147483647&v=beta&t=LwsFVeDs0QkUOgYjokbRzKWMUE0dS0jCjvxkR-it3sQ',
+      'https://media.licdn.com/dms/image/v2/C4D0BAQFJTN_KKfQi5Q/company-logo_200_200/company-logo_200_200/0/1635511777649/bytejr_logo?e=2147483647&v=beta&t=TdZrpD7nHrne50Ok2crAgL31F7Mpe1x4xNDlGeuduj8',
   },
-].reverse();
+];
 
 export default workExperienceItems;

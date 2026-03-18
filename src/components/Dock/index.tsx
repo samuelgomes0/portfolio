@@ -15,7 +15,10 @@ function DockComponent() {
   };
 
   return (
-    <div className="fixed bottom-4 left-1/2 z-50 flex w-[calc(100%-2rem)] -translate-x-1/2 items-center justify-center rounded-full p-2 transition-all duration-300 md:w-auto">
+    <nav
+      aria-label="Navegação principal"
+      className="fixed bottom-4 left-1/2 z-50 flex w-[calc(100%-2rem)] -translate-x-1/2 items-center justify-center rounded-full p-2 transition-all duration-300 md:w-auto"
+    >
       <TooltipProvider>
         <Dock direction="middle">
           <DockIcon>
@@ -84,7 +87,7 @@ function DockComponent() {
           ))}
         </Dock>
       </TooltipProvider>
-    </div>
+    </nav>
   );
 }
 

@@ -14,7 +14,7 @@ const educationItems: EducationItem[] = [
     title: 'Bacharel em Sistemas de Informação',
     year: '2020 - 2025',
     description:
-      'Graduação focada em fundamentos de desenvolvimento de software, arquitetura de sistemas, bancos de dados e boas práticas de engenharia. Formação técnica sólida, complementada por participação em atividades de extensão e grupos de estudo.',
+      'Graduação com disciplinas em Engenharia de Software, Sistemas Distribuídos, Redes de Computadores, Estruturas de Dados e Algoritmos, Bancos de Dados SQL e NoSQL, Segurança da Informação e Criptografia, e Interação Humano-Computador (IHC). Formação complementada por atuação como pesquisador no iTec/FURG-Embrapii.',
     imageUrl:
       'https://media.licdn.com/dms/image/v2/C4D0BAQGaxatLTcIpPQ/company-logo_200_200/company-logo_200_200/0/1651754241689/universidade_federal_do_rio_grande___furg_logo?e=2147483647&v=beta&t=nyik0iMdo2jBq79bPMmW1I4zzV_CvYgVgeFosB98N0w',
   },

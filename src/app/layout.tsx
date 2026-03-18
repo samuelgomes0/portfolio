@@ -9,33 +9,34 @@ import './globals.css';
 const bricolage = Bricolage_Grotesque({
   variable: '--font-bricolage',
   subsets: ['latin'],
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://samuelgomes.dev'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://samuelgomes.com'),
   title: {
     template: '%s | Samuel Gomes',
     default: 'Samuel Gomes | Full-Stack Engineer & Pesquisador',
   },
   description:
-    'Portfólio de Samuel Gomes, Engenheiro Full-Stack e Pesquisador com 5+ anos de experiência em TypeScript, Node.js e Twilio, especializado em soluções de comunicação digital de alta escala e em especialização em Machine Learning e Deep Learning.',
+    'Portfólio de Samuel Gomes, Engenheiro de Software Full-Stack com 4+ anos de experiência em TypeScript, CPaaS Twilio e arquitetura de contact center omnichannel. Especialista em sistemas escaláveis, microsserviços e liderança técnica.',
   keywords: [
     'Samuel Gomes',
     'Full-Stack Engineer',
-    'Pesquisador IA',
-    'iTec FURG',
     'TypeScript',
     'Node.js',
+    'NestJS',
     'React',
     'Next.js',
     'Twilio',
-    'Google Cloud Platform',
+    'Twilio Flex',
+    'Contact Center',
+    'CPaaS',
     'Dialogflow CX',
-    'IA generativa',
-    'Machine Learning',
-    'Deep Learning',
-    'Visão Computacional',
-    'NestJS',
+    'Google Cloud Platform',
+    'Microsserviços',
+    'Arquitetura Limpa',
+    'Observabilidade',
     'portfólio',
     'desenvolvedor',
   ],
@@ -49,7 +50,16 @@ export const metadata: Metadata = {
     siteName: 'Samuel Gomes',
     title: 'Samuel Gomes | Full-Stack Engineer & Pesquisador',
     description:
-      'Engenheiro Full-Stack e Pesquisador com 5+ anos em TypeScript, Node.js e Twilio, especializado em comunicação digital de alta escala e IA generativa.',
+      'Engenheiro de Software Full-Stack com 4+ anos em TypeScript e CPaaS Twilio, especialista em contact center omnichannel, microsserviços e liderança técnica.',
+    url: 'https://samuelgomes.com',
+    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Samuel Gomes | Full-Stack Engineer & Pesquisador',
+    description:
+      'Engenheiro de Software Full-Stack com 4+ anos em TypeScript e CPaaS Twilio, especialista em contact center omnichannel, microsserviços e liderança técnica.',
+    images: ['/og-image.png'],
   },
   robots: {
     index: true,

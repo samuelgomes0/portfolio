@@ -96,6 +96,8 @@ export default function DarkVeil({
 }: Props) {
   const ref = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
     const canvas = ref.current as HTMLCanvasElement;
     const parent = canvas.parentElement as HTMLElement;
 
@@ -135,8 +137,10 @@ export default function DarkVeil({
 
     const start = performance.now();
     let frame = 0;
+    let running = true;
 
     const loop = () => {
+      if (!running) return;
       program.uniforms.uTime.value = ((performance.now() - start) / 1000) * speed;
       program.uniforms.uHueShift.value = hueShift;
       program.uniforms.uNoise.value = noiseIntensity;
@@ -147,11 +151,24 @@ export default function DarkVeil({
       frame = requestAnimationFrame(loop);
     };
 
+    const handleVisibility = () => {
+      if (document.hidden) {
+        running = false;
+        cancelAnimationFrame(frame);
+      } else {
+        running = true;
+        loop();
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibility);
     loop();
 
     return () => {
+      running = false;
       cancelAnimationFrame(frame);
       window.removeEventListener('resize', resize);
+      document.removeEventListener('visibilitychange', handleVisibility);
     };
   }, [
     hueShift,
@@ -162,5 +179,5 @@ export default function DarkVeil({
     warpAmount,
     resolutionScale,
   ]);
-  return <canvas ref={ref} className="block h-full w-full" />;
+  return <canvas ref={ref} className="block h-full w-full" aria-hidden="true" />;
 }
