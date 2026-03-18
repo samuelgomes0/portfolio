@@ -1,6 +1,7 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this
+repository.
 
 ## Commands
 
@@ -18,20 +19,26 @@ No test suite is configured.
 
 ## Architecture
 
-Single-page portfolio built with **Next.js 16 App Router**. The entire portfolio is rendered on `src/app/page.tsx`, which composes all section components in order.
+Single-page portfolio built with **Next.js 16 App Router**. The entire portfolio is rendered on
+`src/app/page.tsx`, which composes all section components in order.
 
 ### Content pattern
 
 Each section in `src/app/(sections)/` follows a consistent pattern:
+
 - `index.tsx` — React component that renders the section
 - `items.ts` — Typed data array (projects, skills, work experience, etc.)
 
-To update content (projects, skills, jobs), edit the relevant `items.ts` file. The components are mostly display-only.
+To update content (projects, skills, jobs), edit the relevant `items.ts` file. The components are
+mostly display-only.
 
 ### Key components
 
-- **`DarkVeil`** — Fixed WebGL canvas background using GLSL shaders and OGL. Accepts visual props (`hueShift`, `noiseIntensity`, `scanlineIntensity`, `speed`, `warpAmount`). Respects `prefers-reduced-motion`.
-- **`Dock`** — Fixed bottom navigation bar. Social links and nav links are defined in `src/components/Dock/items.tsx`.
+- **`DarkVeil`** — Fixed WebGL canvas background using GLSL shaders and OGL. Accepts visual props
+  (`hueShift`, `noiseIntensity`, `scanlineIntensity`, `speed`, `warpAmount`). Respects
+  `prefers-reduced-motion`.
+- **`Dock`** — Fixed bottom navigation bar. Social links and nav links are defined in
+  `src/components/Dock/items.tsx`.
 - **`Header`** — Profile section at the top of the page with name, title, and photo.
 
 ### Styling
@@ -42,7 +49,8 @@ To update content (projects, skills, jobs), edit the relevant `items.ts` file. T
 
 ### UI components
 
-`src/components/ui/` contains Radix UI primitives styled with Tailwind (shadcn/ui pattern). `src/components/magicui/` has animated variants (dock, scroll-progress).
+`src/components/ui/` contains Radix UI primitives styled with Tailwind (shadcn/ui pattern).
+`src/components/magicui/` has animated variants (dock, scroll-progress).
 
 ### Theme
 

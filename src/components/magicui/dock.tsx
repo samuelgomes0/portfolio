@@ -1,7 +1,7 @@
 'use client';
 
 import { cva, type VariantProps } from 'class-variance-authority';
-import { motion, MotionProps, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import { motion, MotionProps, useMotionValue, useSpring, useTransform } from 'motion/react';
 import React, { PropsWithChildren, useRef } from 'react';
 
 import { cn } from '@/lib/utils';
@@ -80,7 +80,7 @@ export interface DockIconProps extends Omit<
   size?: number;
   magnification?: number;
   distance?: number;
-  mouseX?: import('framer-motion').MotionValue<number>;
+  mouseX?: import('motion/react').MotionValue<number>;
   className?: string;
   children?: React.ReactNode;
   props?: PropsWithChildren;

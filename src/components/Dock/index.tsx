@@ -71,6 +71,8 @@ function DockComponent() {
                   <Link
                     href={url}
                     aria-label={name}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={cn(
                       buttonVariants({ variant: 'ghost', size: 'icon' }),
                       'size-12 rounded-full',

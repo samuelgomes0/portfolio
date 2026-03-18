@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { TypographyH1, TypographyH2, TypographyMuted } from '../Typography';
+import { TypographyH1, TypographyMuted, TypographyP } from '../Typography';
 
 function Header() {
   return (
@@ -10,7 +10,7 @@ function Header() {
           className="font-semibold uppercase"
         />
         <TypographyH1 text="Samuel Gomes" className="text-6xl font-bold" />
-        <TypographyH2
+        <TypographyP
           text="Engenheiro Full-Stack especialista em TypeScript, CPaaS Twilio e arquitetura de contact center omnichannel. Líder técnico com foco em sistemas escaláveis e observabilidade."
           className="text-muted-foreground text-lg font-normal"
         />

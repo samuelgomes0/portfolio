@@ -1,4 +1,4 @@
-interface workExperienceItem {
+interface WorkExperienceItem {
   id: number;
   companyName: string;
   position: string;
@@ -9,7 +9,7 @@ interface workExperienceItem {
   imageUrl: string;
 }
 
-const workExperienceItems: workExperienceItem[] = [
+const workExperienceItems: WorkExperienceItem[] = [
   {
     id: 3,
     companyName: 'iTec / FURG-Embrapii',

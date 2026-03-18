@@ -1,28 +1,10 @@
 import Header from '@/components/Header';
-import type { Metadata } from 'next';
 import AboutSection from './(sections)/About';
 import ContactSection from './(sections)/Contact';
 import EducationSection from './(sections)/Education';
 import ProjectsSection from './(sections)/Projects';
 import SkillsSection from './(sections)/Skills';
 import WorkExperienceSection from './(sections)/WorkExperience';
-
-export const metadata: Metadata = {
-  title: 'Samuel Gomes | Full-Stack Engineer & Pesquisador',
-  description:
-    'Portfólio de Samuel Gomes, Engenheiro de Software Full-Stack com 4+ anos de experiência em TypeScript, CPaaS Twilio e arquitetura de contact center omnichannel. Especialista em sistemas escaláveis, microsserviços e liderança técnica.',
-  openGraph: {
-    url: 'https://samuelgomes.com',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Samuel Gomes — Full-Stack Engineer & Pesquisador',
-      },
-    ],
-  },
-};
 
 function Home() {
   return (

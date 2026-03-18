@@ -169,6 +169,7 @@ export default function DarkVeil({
       cancelAnimationFrame(frame);
       window.removeEventListener('resize', resize);
       document.removeEventListener('visibilitychange', handleVisibility);
+      gl.getExtension('WEBGL_lose_context')?.loseContext();
     };
   }, [
     hueShift,

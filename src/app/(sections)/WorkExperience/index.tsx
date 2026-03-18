@@ -54,7 +54,7 @@ function WorkExperienceSection() {
                 </div>
                 <TypographyMuted
                   text={`${startDate} - ${endDate}`}
-                  className="text:center text-right text-sm md:flex-1"
+                  className="text-center text-right text-sm md:flex-1"
                 />
               </AccordionTrigger>
               <AccordionContent className="space-y-4">

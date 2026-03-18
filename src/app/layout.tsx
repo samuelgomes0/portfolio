@@ -52,7 +52,14 @@ export const metadata: Metadata = {
     description:
       'Engenheiro de Software Full-Stack com 4+ anos em TypeScript e CPaaS Twilio, especialista em contact center omnichannel, microsserviços e liderança técnica.',
     url: 'https://samuelgomes.com',
-    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Samuel Gomes — Full-Stack Engineer & Pesquisador',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
